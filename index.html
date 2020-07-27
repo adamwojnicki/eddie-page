@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Edie</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -20,7 +24,7 @@
           </ul>
         </nav>
       </header>
-      <section class="hero">
+      <section class="content-section hero">
         <p class="eyebrow">Unhappy with your website?</p>
         <h2 class="hero__headline">
           We create beautiful and fast web services
@@ -39,6 +43,74 @@
           <input type="email" name="email" placeholder="Email" />
           <button type="submit">Join</button>
         </form>
+      </section>
+      <section class="content-section services">
+        <h2 class="content-section__headline">We offer high demand services</h2>
+        <div class="flex-container">
+          <div class="card">
+            <i class="material-icons card__icon">create</i>
+            <h3 class="card__headline">UX/UI design</h3>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <a href="#" class="card__cta">Get started</a>
+          </div>
+          <div class="card">
+            <i class="material-icons card__icon">code</i>
+            <h3 class="card__headline">Front End</h3>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <a href="#" class="card__cta">Get started</a>
+          </div>
+          <div class="card">
+            <i class="material-icons card__icon">storage</i>
+            <h3 class="card__headline">Back End</h3>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <a href="#" class="card__cta">Get started</a>
+          </div>
+        </div>
+      </section>
+      <section class="content-section work">
+        <h2 class="content-section__headline">
+          Good design means good business
+        </h2>
+        <div class="work-showcase">
+          <div class="work-card">
+            <figure class="work-card__img">
+              <img src="./img/smarthome.jpg" alt="Smart home dashboard" />
+              <p class="work-card__eyebrow">Full stack application</p>
+              <p class="work-card__title">Smart home dashboard</p>
+            </figure>
+          </div>
+          <div class="work-card">
+            <figure class="work-card__img">
+              <img src="./img/onboard.png" alt="Onboard application" />
+              <p class="work-card__eyebrow">UI/UX design</p>
+              <p class="work-card__title">Onboard application</p>
+            </figure>
+          </div>
+          <div class="work-card">
+            <figure class="work-card__img">
+              <img src="./img/booking.png" alt="Booking system" />
+              <p class="work-card__eyebrow">Mobile application</p>
+              <p class="work-card__title">Booking system</p>
+            </figure>
+          </div>
+          <div class="work-card">
+            <figure class="work-card__img">
+              <img src="./img/smarthome.jpg" alt="Juice product homepage" />
+              <p class="work-card__eyebrow">Front end application</p>
+              <p class="work-card__title">Juice product homepage</p>
+            </figure>
+          </div>
+        </div>
+        <a href="" class="content-section__cta">see more&nbsp;&rarr;</a>
       </section>
     </div>
   </body>
