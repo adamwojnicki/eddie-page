@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Montserrat:wght@600&family=Poppins:wght@400;500;600&display=swap");
+
 :root {
   font-size: 10px;
+  --dark: #100e1d;
   --grey-dark1: #333333;
   --grey-dark2: #4f4f4f;
   --grey-dark3: #828282;
@@ -10,10 +13,68 @@
   --red: rgba(235, 87, 87, 0.7);
   --green: rgba(39, 174, 96, 0.7);
   --blue: #57b0e2;
+  --sans-serif1: "Poppins", Arial, Helvetica, sans-serif;
+  --sans-serif2: "Montserrat", Arial, Helvetica, sans-serif;
+  --brand: "Heebo", Arial, Helvetica, sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  color: var(--grey-dark1);
+  text-decoration: none;
+}
+
+body {
+  color: var(--grey-dark1);
+  font-family: var(--sans-serif1);
+}
+
+.container {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 42px 0;
+  align-items: center;
+}
+
+.header__brand {
+  font-size: 3.6rem;
+  font-family: var(--brand);
+}
+
+.navigation {
+  width: 60%;
+}
+
+.navigation__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__item {
+  font-size: 2.4rem;
+}
+
+.navigation__item a {
+  transition: opacity 0.4s ease-in-out;
+}
+
+.navigation__item a:hover {
+  opacity: 0.8;
 }
