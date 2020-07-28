@@ -1,0 +1,19 @@
+:root {
+  font-size: 10px;
+  --grey-dark1: #333333;
+  --grey-dark2: #4f4f4f;
+  --grey-dark3: #828282;
+  --grer-dark4: #bdbdbd;
+  --grey-light1: #f2f2f2;
+  --grey-light2: #a9a9a9;
+  --white: #ffffff;
+  --red: rgba(235, 87, 87, 0.7);
+  --green: rgba(39, 174, 96, 0.7);
+  --blue: #57b0e2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
