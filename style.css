@@ -9,6 +9,7 @@
   --grer-dark4: #bdbdbd;
   --grey-light1: #f2f2f2;
   --grey-light2: #a9a9a9;
+  --grey-light3: #e0e0e0;
   --white: #ffffff;
   --red: rgba(235, 87, 87, 0.7);
   --green: rgba(39, 174, 96, 0.7);
@@ -88,6 +89,10 @@ body {
   font-size: 1.8rem;
 }
 
+.hero {
+  margin-bottom: 200px;
+}
+
 .hero .eyebrow {
   color: var(--blue);
 }
@@ -96,7 +101,7 @@ body {
 .hero__headline,
 .hero__description,
 .hero .email-form {
-  margin-left: 20%;
+  margin-left: 15%;
   max-width: 543px;
 }
 
@@ -166,6 +171,80 @@ body {
   cursor: pointer;
 }
 
-.content-section {
-  margin-bottom: 200px;
+.content-section:not(.hero) {
+  margin: 0 auto 200px;
+  width: 85%;
+}
+
+.content-section__headline {
+  font-size: 3.6rem;
+  font-weight: 500;
+  max-width: 350px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.services .flex-container {
+  margin-top: 42px;
+}
+
+.card {
+  margin: 0 24px;
+  padding: 46px 34px;
+  border-radius: 15px;
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+.card__icon {
+  color: var(--white);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 35px;
+  font-size: 2.7rem;
+}
+
+.card__icon--red {
+  background-color: var(--red);
+}
+
+.card__icon--green {
+  background-color: var(--green);
+}
+
+.card__icon--blue {
+  background-color: var(--blue);
+}
+
+.card__headline {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.card__description {
+  font-size: 1.6rem;
+  margin-bottom: 39px;
+  color: var(--grey-dark2);
+}
+
+.card__cta {
+  font-size: 1.6rem;
+  color: var(--grey-dark3);
+  padding: 9px 13px;
+  background: var(--grey-light3);
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.card:hover,
+.card:focus {
+  box-shadow: 10px 10px 30px rgba(51, 51, 51, 0.1);
+}
+
+.card:hover > .card__cta,
+.card:focus > .card__cta {
+  background: var(--blue);
+  color: var(--white);
 }
