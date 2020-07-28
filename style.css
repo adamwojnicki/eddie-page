@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Montserrat:wght@600&family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Montserrat:wght@600&family=Poppins:wght@300;400;500;600&display=swap");
 
 :root {
   font-size: 10px;
@@ -247,4 +247,38 @@ body {
 .card:focus > .card__cta {
   background: var(--blue);
   color: var(--white);
+}
+
+.work-showcase {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-card {
+  max-width: 44%;
+}
+
+.work-card:nth-child(odd) {
+  margin-top: 145px;
+  margin-right: 9px;
+}
+
+.work-card:nth-child(even) {
+  margin-left: 9px;
+}
+
+.work-card__img img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.work-card__eyebrow {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--grey-dark3);
+  margin: 19px 0;
+}
+
+.work-card__title {
+  font-size: 2.4rem;
 }
