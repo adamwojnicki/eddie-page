@@ -35,6 +35,11 @@ a {
   text-decoration: none;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--grey-dark1);
   font-family: var(--sans-serif1);
