@@ -45,6 +45,10 @@ body {
   font-family: var(--sans-serif1);
 }
 
+body.menu-active {
+  overflow-y: hidden;
+}
+
 .container {
   width: 90%;
   max-width: 1440px;
@@ -459,10 +463,14 @@ body {
     right: 0;
     background: var(--white);
     width: 100%;
-    height: 100vw;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     transform: translateX(100%);
+    z-index: 5;
+  }
+  .navigation__list.active {
+    transform: translateX(0);
   }
   .navigation__item {
     margin-bottom: 24px;
@@ -471,6 +479,7 @@ body {
     display: block;
     z-index: 100;
     cursor: pointer;
+    position: relative;
   }
   .hero .eyebrow,
   .hero__headline,
