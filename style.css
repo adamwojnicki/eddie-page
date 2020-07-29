@@ -51,6 +51,7 @@ body {
   justify-content: space-between;
   padding: 42px 0;
   align-items: center;
+  margin-bottom: 64px;
 }
 
 .header__brand,
@@ -471,6 +472,9 @@ body {
     margin-left: 10%;
     margin-right: 10%;
   }
+  .content-section {
+    margin-bottom: 100px;
+  }
   .flex-container {
     flex-direction: column;
     align-items: flex-start;
@@ -478,13 +482,35 @@ body {
   .card {
     margin-bottom: 18px;
   }
+  .content-section.team {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .content-section.team .content-section__img {
+    width: 100%;
+  }
+  .content-section.team .content-section__text-content {
+    margin-bottom: 32px;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .hero__headline {
+    font-size: 3rem;
+  }
+  .hero__description {
+    font-size: 1.2rem;
+  }
+  .work-showcase {
+    margin-top: 48px;
+  }
   .work-card {
     max-width: 100%;
     width: 100%;
     margin-bottom: 64px;
+  }
+  .work-card__eyebrow {
+    margin: 9px 0;
   }
   .work-card:nth-child(odd) {
     margin-top: 0;
@@ -492,5 +518,8 @@ body {
   }
   .work-card:nth-child(even) {
     margin-left: 0;
+  }
+  .email-form input {
+    width: 280px;
   }
 }
