@@ -359,6 +359,7 @@ body {
 
 .testimonial .author {
   display: flex;
+  align-items: flex-start;
 }
 
 .testimonial .author__img {
@@ -379,6 +380,7 @@ body {
 
 .testimonial .author__org {
   font-size: 18px;
+  color: var(--grey-dark3);
 }
 
 .footer {
@@ -472,6 +474,9 @@ body {
     margin-left: 10%;
     margin-right: 10%;
   }
+  .hero__image img {
+    border-radius: 10px;
+  }
   .content-section {
     margin-bottom: 100px;
   }
@@ -491,6 +496,9 @@ body {
   }
   .content-section.team .content-section__text-content {
     margin-bottom: 32px;
+  }
+  .footer .flex-container > * {
+    margin-bottom: 64px;
   }
 }
 
@@ -520,6 +528,9 @@ body {
     margin-left: 0;
   }
   .email-form input {
-    width: 280px;
+    width: 250px;
+  }
+  .testimonial__quote {
+    font-size: 2.8rem;
   }
 }
