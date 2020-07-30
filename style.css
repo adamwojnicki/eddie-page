@@ -478,6 +478,7 @@ body.menu-active {
     align-items: center;
     transform: translateX(100%);
     z-index: 5;
+    transition: all 0.4s ease-in-out;
   }
   .navigation__list.active {
     transform: translateX(0);
