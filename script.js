@@ -22,4 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
   mobileMenuIcon.addEventListener("click", () =>
     handleMobileMenu(mobileMenuIcon)
   );
+  AOS.init({
+    offset: 300,
+    delay: 200,
+    duration: 1000,
+    easing: "ease",
+    once: false,
+    mirror: false,
+  });
 });

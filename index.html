@@ -8,11 +8,14 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="./script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -30,20 +33,22 @@
         </nav>
       </header>
       <section class="content-section hero" id="home">
-        <p class="eyebrow">Unhappy with your website?</p>
-        <h2 class="hero__headline">
+        <p class="eyebrow" data-aos="fade-up">Unhappy with your website?</p>
+        <h2 class="hero__headline" data-aos="fade-up" data-aos-delay="200">
           We create beautiful and fast web services
         </h2>
-        <figure class="hero__image">
+        <figure class="hero__image" data-aos="fade-right" data-aos-delay="200">
           <img src="./img/heroImage.jpg" alt="Picture of our team at work" />
         </figure>
-        <h2 class="hero__headline">Story, emotion and purpose</h2>
-        <p class="hero__description">
+        <h2 class="hero__headline" data-aos="fade-right" data-aos-delay="200">
+          Story, emotion and purpose
+        </h2>
+        <p class="hero__description" data-aos="fade-right" data-aos-delay="200">
           We help transform your ideas into real world applications that will
           outperform your toughest competition and help you achieve your
           strategic goals in short period of time.
         </p>
-        <form class="email-form">
+        <form class="email-form" data-aos="fade-right">
           <label for="email">Want us to contact you?</label>
           <div class="input-area">
             <input required type="email" name="email" placeholder="Email" />
@@ -54,7 +59,7 @@
       <section class="content-section services" id="services">
         <h2 class="content-section__headline">We offer high demand services</h2>
         <div class="flex-container">
-          <div class="card">
+          <div class="card" data-aos="fade-right">
             <i class="material-icons card__icon card__icon--blue">create</i>
             <h3 class="card__headline">UX/UI design</h3>
             <p class="card__description">
@@ -63,7 +68,7 @@
             </p>
             <a href="#" class="card__cta">Get started</a>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <i class="material-icons card__icon card__icon--green">code</i>
             <h3 class="card__headline">Front End</h3>
             <p class="card__description">
@@ -72,7 +77,7 @@
             </p>
             <a href="#" class="card__cta">Get started</a>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-left">
             <i class="material-icons card__icon card__icon--red">storage</i>
             <h3 class="card__headline">Back End</h3>
             <p class="card__description">
@@ -88,28 +93,28 @@
           Good design means good business
         </h2>
         <div class="work-showcase">
-          <div class="work-card">
+          <div class="work-card" data-aos="zoom-in">
             <figure class="work-card__img">
               <img src="./img/smarthome.jpg" alt="Smart home dashboard" />
             </figure>
             <p class="work-card__eyebrow">Full stack application</p>
             <p class="work-card__title">Smart home dashboard</p>
           </div>
-          <div class="work-card">
+          <div class="work-card" data-aos="zoom-in">
             <figure class="work-card__img">
               <img src="./img/onboard.png" alt="Onboard application" />
             </figure>
             <p class="work-card__eyebrow">UI/UX design</p>
             <p class="work-card__title">Onboard application</p>
           </div>
-          <div class="work-card">
+          <div class="work-card" data-aos="zoom-in">
             <figure class="work-card__img">
               <img src="./img/booking.png" alt="Booking system" />
             </figure>
             <p class="work-card__eyebrow">Mobile application</p>
             <p class="work-card__title">Booking system</p>
           </div>
-          <div class="work-card">
+          <div class="work-card" data-aos="zoom-in">
             <figure class="work-card__img">
               <img src="./img/smarthome.jpg" alt="Juice product homepage" />
             </figure>
@@ -120,7 +125,7 @@
         <a href="#" class="content-section__cta">see more&nbsp;&rarr;</a>
       </section>
       <section class="content-section team">
-        <div class="content-section__text-content">
+        <div class="content-section__text-content" data-aos="zoom-in-right">
           <p class="eyebrow">Meet the team</p>
           <h2 class="content-section__headline">
             We are chilled and a laidback team
@@ -129,18 +134,22 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
-        <figure class="content-section__img">
+        <figure
+          class="content-section__img"
+          data-aos="flip-left"
+          data-aos-delay="1000"
+        >
           <img src="./img/person3.png" alt="Pictures of our team members" />
           <img src="./img/person1.png" alt="Pictures of our team members" />
           <img src="./img/person2.png" alt="Pictures of our team members" />
         </figure>
       </section>
       <section class="content-section testimonial" id="clients">
-        <p class="testimonial__quote">
+        <p class="testimonial__quote" data-aos="fade-up">
           “Fast and outstanding resutls. Edie understands their customer’s
           needs. They have a young and talented team.”
         </p>
-        <div class="author">
+        <div class="author" data-aos="fade-right" data-aos-delay="500">
           <img
             src="./img/person4.png"
             alt="Portrait of Carlos Tran"
@@ -195,6 +204,5 @@
       </div>
       <p class="footer__text">Adam Wojnicki @ DevChallenges.io</p>
     </footer>
-    <script src="./script.js"></script>
   </body>
 </html>
