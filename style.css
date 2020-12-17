@@ -52,12 +52,16 @@ body {
 body.menu-active {
   overflow-y: hidden;
 }
-
+.header {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+}
 .container {
   width: 90%;
   max-width: 1440px;
   margin: auto;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .header {
